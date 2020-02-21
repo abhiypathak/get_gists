@@ -1,6 +1,6 @@
-##Python Utility to get publicly available gists  
+## Python Utility to get publicly available gists  
 
-###Overview
+### Overview
 This utility can be used for getting publicly available gists for a given user from github API. 
 It offers the following features:
 
@@ -10,11 +10,11 @@ using ```since``` parameter as described in the Github's API docs
 
 The output will show the URLs of the gists
 
-###Requirements
+### Requirements
 1. Python version required ```3.7.4``` or higher
 2. Python package ```requests```
 
-###Example Usage
+### Example Usage
 ```
 $ python3 get_gists.py -u xxx
 Connection to https://api.github.com/users/xxx/gists successful!
@@ -58,13 +58,13 @@ No new gists available since your last look up at 2020-02-21T12:13:45Z
 
 ```
 
-###Notes
+### Notes
 
 This utility will create a ```.<username>_get_gists``` file in the users home directory to track the requests made.
 A new file is created for each unique users
 
-###TO-DO
+### TO-DO
 
-1. Create a new flag that resets the history
-2. Create a new flag to get raw urls of the gist
-3. Create a new flag to implement pagination as described here(https://developer.github.com/v3/gists/)
+- [ ] Create a new flag that resets the history
+- [ ] Create a new flag to get raw urls of the gist
+- [ ] Create a new flag to implement pagination as described here(https://developer.github.com/v3/gists/)
